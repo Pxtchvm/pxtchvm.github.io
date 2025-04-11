@@ -1,74 +1,61 @@
 {
-  "name": "Corey Schafer",
-  "label": "Software Engineer",
-  "image_path": "portfolio_media/profile.jpg",
+  "name": "Jacob O. Duldulao",
+  "label": "Web Developer",
+  "image_path": "portfolio_media/profile.webp",
   "contact": {
-    "email": "CoreyMSchafer@gmail.com",
-    "phone": "",
-    "location": "Charleston, WV"
+    "email": "jd.jacobduldulao@gmail.com",
+    "phone": "0945-166-1000",
+    "location": "Makati, Philippines"
   },
-  "summary": "Programming educator on YouTube. Simplifying complex concepts into manageable steps to help learners digest material at their own pace.",
-  "url": "https://coreyms.com",
+  "summary": "Passionate about computers and technology in general. Loves solving complex problems and creating solutions.",
+  "url": "https://pxtchvm.github.io",
   "social_links": [
     {
-      "label": "Coreyms.com",
-      "url": "https://coreyms.com",
-      "svg_path": "img/globe.svg"
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jacobduldulao/",
+      "svg_path": "img/linkedin.svg"
     },
     {
       "label": "YouTube",
-      "url": "https://youtube.com/c/coreyms",
+      "url": "https://www.youtube.com/@JacobDuldulao",
       "svg_path": "img/youtube.svg"
     },
     {
-      "label": "Instagram",
-      "url": "https://www.instagram.com/coreymschafer",
-      "svg_path": "img/instagram.svg"
+      "label": "Facebook",
+      "url": "https://www.facebook.com/Jacob.O.Duldulao",
+      "svg_path": "img/facebook.svg"
     },
     {
       "label": "Github",
-      "url": "https://github.com/CoreyMSchafer",
+      "url": "https://github.com/Pxtchvm",
       "svg_path": "img/github.svg"
     }
   ],
   "work_experience": [
     {
-      "company": "LASP (Labratory for Atmospheric and Space Physics)",
-      "position": "Software Engineer",
-      "url": "https://lasp.colorado.edu/",
-      "start_date": "2015",
-      "end_date": "2019",
-      "summary": "",
+      "company": "Latest Job",
+      "position": "Position One",
+      "url": "https://sample.com",
+      "start_date": "01/01/2020",
+      "end_date": "Present",
+      "summary": "Short summary about present job and what the position entails",
       "highlights": [
-        "Created and maintained back-end API services using Flask.",
-        "Created system administration scripts using Python to automate the processing and deployment of mission-critical data.",
-        "Tasked with migrating in-house data pipelines to a cloud-based solution using AWS."
+        "First Duty of Current Job",
+        "Second Duty of Current Job",
+        "Third Duty of Current Job"
       ]
     },
     {
-      "company": "WVU GIS Technical Center",
-      "position": "Software Engineer",
-      "url": "https://wvgis.wvu.edu/",
-      "start_date": "2012",
-      "end_date": "2015",
-      "summary": "",
+      "company": "Previous Job",
+      "position": "Position Two",
+      "url": "https://sample.com",
+      "start_date": "01/01/2010",
+      "end_date": "01/01/2020",
+      "summary": "Short summary about previous job and what that position entailed",
       "highlights": [
-        "Developed and designed GIS web applications with the ArcGIS JavaScript API",
-        "Wrote and published geoprocessing services using Python and ArcPy",
-        "Created backend user authentication systems with PHP and MySQL"
-      ]
-    },
-    {
-      "company": "MATRIC (Mid-Atlantic Technology, Research, and Innovation Center)",
-      "position": "Software Engineer",
-      "url": "https://www.matricinnovates.com/",
-      "start_date": "2010",
-      "end_date": "2011",
-      "summary": "",
-      "highlights": [
-        "Created GIS web applications with ActionScript and the ArcGIS API for Flex.",
-        "Developed custom widgets for routing, wind data visualization, and simulations.",
-        "Wrote and maintained SQL-based queries to efficiently retrieve and analyze data from GIS REST services."
+        "First Duty of Previous Job",
+        "Second Duty of Previous Job",
+        "Third Duty of Previous Job"
       ]
     }
   ],
@@ -116,15 +103,31 @@
   ],
   "education": [
     {
-      "institution": "Marshall University",
-      "location": "Hungington, WV, USA",
-      "url": "https://marshall.edu",
+      "institution": "Don Bosco Technical Institute",
+      "location": "Chino Roces Avenue, Brgy. Pio Del Pilar, Makati City",
+      "url": "https://donboscomakati.edu.ph/",
       "degrees": [
-        "Bachelor of Science in Computer Science",
-        "Minor in Mathematics"
+        "Junior High School with Industrial Drafting Specialization",
+        "Senior high School - Science, Technology, Engineering, and Mathematics (STEM) Strand"
       ],
       "honors": [
-        "2010 Outstanding Student Award",
+        "2014-2020 Academic, Technical, and Conduct Awardee",
+        "2005 R.L. “Buck” Woodall Student-Athlete scholarship",
+        "Placed in a District ACM ICPC Team Programming Contest"
+      ],
+      "gpa_cumulative": "3.29",
+      "gpa_major": "3.93",
+      "graduation_date": "2010"
+    },
+    {
+      "institution": "Mapúa University",
+      "location": "1191 Pablo Ocampo Sr. Extension, Brgy. Sta. Cruz, Makati City",
+      "url": "https://www.mapua.edu.ph/",
+      "degrees": [
+        "Bachelor of Science in Computer Science"
+      ],
+      "honors": [
+        "2014-2020 Academic, Technical, and Conduct Awardee",
         "2005 R.L. “Buck” Woodall Student-Athlete scholarship",
         "Placed in a District ACM ICPC Team Programming Contest"
       ],
