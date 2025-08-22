@@ -1,13 +1,13 @@
 {
-  "name": "Jacob O. Duldulao",
-  "label": "Web Developer",
+  "name": "Jacob Oquendo Duldulao",
+  "label": "Computer Science Student and Assistant at Mapúa University",
   "image_path": "portfolio_media/profile.webp",
   "contact": {
-    "email": "jd.jacobduldulao@gmail.com",
-    "phone": "0945-166-1000",
-    "location": "Makati, Philippines"
+    "email": "joduldulao@mymail.mapua.edu.ph",
+    "phone": "63945-166-1000",
+    "location": "6875 Washington St., Brgy. Pio Del Pilar, Makati City, Philippines"
   },
-  "summary": "Passionate about computers and technology in general. Loves solving complex problems and creating solutions.",
+  "summary": "Computer Science Student specializing in Artificial Intelligence at Mapúa University Makati where I work as a student assistant and peer adviser helping other students with their coursework. Areas of interest include AI, machine learning, cloud computing, web development, and cybersecurity research.",
   "url": "https://pxtchvm.github.io",
   "social_links": [
     {
@@ -16,159 +16,307 @@
       "svg_path": "img/linkedin.svg"
     },
     {
-      "label": "YouTube",
-      "url": "https://www.youtube.com/@JacobDuldulao",
-      "svg_path": "img/youtube.svg"
-    },
-    {
-      "label": "Facebook",
-      "url": "https://www.facebook.com/Jacob.O.Duldulao",
-      "svg_path": "img/facebook.svg"
-    },
-    {
-      "label": "Github",
+      "label": "GitHub",
       "url": "https://github.com/Pxtchvm",
       "svg_path": "img/github.svg"
+    },
+    {
+      "label": "Personal Website",
+      "url": "https://pxtchvm.github.io/",
+      "svg_path": "img/globe.svg"
+    },
+    {
+      "label": "Credly",
+      "url": "https://www.credly.com/users/jacob-duldulao",
+      "svg_path": "img/globe.svg"
     }
   ],
   "work_experience": [
     {
-      "company": "Latest Job",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
+      "company": "Mapúa University Makati",
+      "position": "Student Assistant and Peer Adviser",
+      "url": "https://www.mapua.edu.ph/",
+      "start_date": "August 2025",
       "end_date": "Present",
-      "summary": "Short summary about present job and what the position entails",
+      "summary": "Work under the Center for Student Advising (CSA) Department providing services to support students in addressing academic, personal, social, and career adjustment problems.",
       "highlights": [
-        "First Duty of Current Job",
-        "Second Duty of Current Job",
-        "Third Duty of Current Job"
-      ]
-    },
-    {
-      "company": "Previous Job",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous job and what that position entailed",
-      "highlights": [
-        "First Duty of Previous Job",
-        "Second Duty of Previous Job",
-        "Third Duty of Previous Job"
+        "Assist students in developing their academic plans and help them adjust to college life",
+        "Provide peer adviser tutoring services to students struggling with coursework",
+        "Support CSA department in delivering comprehensive student advisory services"
       ]
     }
   ],
   "projects": [
     {
-      "title": "Educational Content Creator on YouTube",
-      "summary": "Channel focused on creating tutorials and walkthroughs for software developers, programmers, and engineers.",
-      "url": "https://youtube.com/c/coreyms",
-      "highlights": ["Over 1 million subscribers", "Over 100 million views"],
-      "images": [
-        {
-          "img_path": "portfolio_media/yt1.png",
-          "caption": "Main Channel"
-        },
-        {
-          "img_path": "portfolio_media/yt2.png",
-          "caption": "Tutorials"
-        },
-        {
-          "img_path": "portfolio_media/yt3.png",
-          "caption": "Live Streams"
-        }
-      ]
-    }
-  ],
-  "volunteer_experience": [
-    {
-      "organization": "Heritage Point Assisted Living",
-      "position": "Computer Assistance",
-      "url": "https://www.heritage-point.com/",
-      "start_date": "2012",
-      "end_date": "2015",
-      "summary": "Helped residents with any computer problems for two hours each week. Mainly helped with networking, typing, basic instruction, and troubleshooting.",
-      "highlights": []
+      "title": "Advanced Phishing Techniques Research",
+      "summary": "Literature review analyzing Adversary-in-the-Middle and Browser-in-the-Browser attacks in modern cybersecurity, published in CIT Journal.",
+      "url": "https://doi.org/10.2478/cait-2025-0004",
+      "highlights": [
+        "Published research in CIT Journal of Computing and Information Technology",
+        "Analyzed sophisticated phishing methods that bypass traditional security",
+        "Developed practical defense recommendations for cybersecurity teams"
+      ],
+      "images": []
     },
     {
-      "organization": "Marshall University",
-      "position": "Student Ambassador",
-      "url": "https://marshall.edu",
-      "start_date": "2007",
-      "end_date": "2008",
-      "summary": "Gave campus tours, organized promotional events, and ran summer orientation.",
-      "highlights": []
+      "title": "Few-Shot Learning for Occupancy Detection (Capstone Thesis)",
+      "summary": "Privacy-focused system that detects and counts people using Wi-Fi beamforming feedback with meta-learning architecture.",
+      "url": "https://github.com/Pxtchvm",
+      "highlights": [
+        "Combines few-shot learning with Wi-Fi beamforming data",
+        "Adapts to new environments with just 1-10 training samples",
+        "Led research methodology design and multi-environment data collection"
+      ],
+      "images": []
+    },
+    {
+      "title": "crAIvings - AI-Powered Restaurant Feedback Analysis",
+      "summary": "Web application leveraging AI to analyze restaurant reviews, providing actionable insights to restaurant owners.",
+      "url": "https://github.com/Pxtchvm",
+      "highlights": [
+        "AI-powered sentiment analysis and review categorization",
+        "Actionable insights dashboard for restaurant owners",
+        "Helps diners make informed decisions based on analyzed feedback"
+      ],
+      "images": []
+    },
+    {
+      "title": "FindMe: School Lost and Found System",
+      "summary": "Modern web-based Lost and Found Management System designed to streamline reporting, tracking, and claiming lost items on campus.",
+      "url": "https://github.com/Pxtchvm",
+      "highlights": [
+        "Streamlined process for reporting and tracking lost items",
+        "Web-based interface for easy campus-wide access",
+        "Efficient matching system for lost and found items"
+      ],
+      "images": []
+    },
+    {
+      "title": "Colemak Without AltGr",
+      "summary": "Modified Colemak keyboard layout for Windows without AltGr functionality, optimized for IDE usage with hotkey shortcuts.",
+      "url": "https://github.com/Pxtchvm",
+      "highlights": [
+        "Custom keyboard layout modification for improved productivity",
+        "Capslock remapped to Backspace functionality",
+        "Optimized for development workflow in IDEs like VSCode"
+      ],
+      "images": []
     }
   ],
+  "volunteer_experience": [],
   "education": [
     {
-      "institution": "Don Bosco Technical Institute",
-      "location": "Chino Roces Avenue, Brgy. Pio Del Pilar, Makati City",
-      "url": "https://donboscomakati.edu.ph/",
-      "degrees": [
-        "Junior High School with Industrial Drafting Specialization",
-        "Senior high School - Science, Technology, Engineering, and Mathematics (STEM) Strand"
-      ],
-      "honors": [
-        "2014-2020 Academic, Technical, and Conduct Awardee",
-        "2005 R.L. “Buck” Woodall Student-Athlete scholarship",
-        "Placed in a District ACM ICPC Team Programming Contest"
-      ],
-      "gpa_cumulative": "3.29",
-      "gpa_major": "3.93",
-      "graduation_date": "2010"
-    },
-    {
-      "institution": "Mapúa University",
+      "institution": "Mapúa University Makati",
       "location": "1191 Pablo Ocampo Sr. Extension, Brgy. Sta. Cruz, Makati City",
       "url": "https://www.mapua.edu.ph/",
       "degrees": [
-        "Bachelor of Science in Computer Science"
+        "Bachelor of Science in Computer Science - Artificial Intelligence"
       ],
       "honors": [
-        "2014-2020 Academic, Technical, and Conduct Awardee",
-        "2005 R.L. “Buck” Woodall Student-Athlete scholarship",
-        "Placed in a District ACM ICPC Team Programming Contest"
+        "Dean's and President's Lister"
       ],
-      "gpa_cumulative": "3.29",
-      "gpa_major": "3.93",
-      "graduation_date": "2010"
+      "gpa_cumulative": "1.39",
+      "gpa_major": "1.39",
+      "graduation_date": "2022 - Present"
+    },
+    {
+      "institution": "University of the Philippines Diliman",
+      "location": "Quezon City, Metro Manila",
+      "url": "https://upd.edu.ph/",
+      "degrees": [
+        "Bachelor of Science in Computer Engineering (Incomplete)"
+      ],
+      "honors": [],
+      "gpa_cumulative": "",
+      "gpa_major": "",
+      "graduation_date": "2020 - 2022"
+    },
+    {
+      "institution": "Don Bosco Technical Institute of Makati",
+      "location": "Chino Roces Avenue, Brgy. Pio Del Pilar, Makati City",
+      "url": "https://donboscomakati.edu.ph/",
+      "degrees": [
+        "Senior High School - Science, Technology, Engineering, and Mathematics (STEM)"
+      ],
+      "honors": [],
+      "gpa_cumulative": "",
+      "gpa_major": "",
+      "graduation_date": "2014 - 2020"
     }
   ],
   "skills": [
     {
-      "name": "Python, Flask, Django",
+      "name": "Python",
+      "proficiency": 95,
+      "proficiency_label": "Advanced"
+    },
+    {
+      "name": "JavaScript",
+      "proficiency": 95,
+      "proficiency_label": "Advanced"
+    },
+    {
+      "name": "HTML & CSS",
       "proficiency": 100,
       "proficiency_label": "Expert"
     },
     {
-      "name": "System Administration, Linux",
-      "proficiency": 90,
+      "name": "Java",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "C++",
+      "proficiency": 60,
+      "proficiency_label": "Familiar"
+    },
+    {
+      "name": "React",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "Node.js",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "MongoDB",
+      "proficiency": 60,
+      "proficiency_label": "Familiar"
+    },
+    {
+      "name": "AWS (Certified)",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "Git & GitHub",
+      "proficiency": 95,
       "proficiency_label": "Advanced"
     },
     {
-      "name": "JavaScript, HTML, CSS",
-      "proficiency": 75,
-      "proficiency_label": "Comfortable"
+      "name": "Linux & WSL",
+      "proficiency": 85,
+      "proficiency_label": "Proficient"
+    },
+    {
+      "name": "VSCode",
+      "proficiency": 100,
+      "proficiency_label": "Expert"
+    },
+    {
+      "name": "AHKv2 Scripting",
+      "proficiency": 95,
+      "proficiency_label": "Advanced"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified AI Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "August 2025",
+      "url": "https://www.credly.com/badges/d2fb9874-a12b-4c7f-8fd8-e962ab2d00c5/public_url",
+      "credential_id": "d2fb9874-a12b-4c7f-8fd8-e962ab2d00c5"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "July 2025",
+      "url": "https://www.credly.com/badges/ef9dd933-7a1a-4918-98de-6dd281a83090/public_url",
+      "credential_id": "ef9dd933-7a1a-4918-98de-6dd281a83090"
+    },
+    {
+      "name": "Big Data, Artificial Intelligence, and Ethics",
+      "issuer": "UC Davis",
+      "date": "June 2025",
+      "url": "",
+      "credential_id": ""
+    },
+    {
+      "name": "Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming",
+      "issuer": "Stanford University",
+      "date": "March 2024",
+      "url": "",
+      "credential_id": ""
+    },
+    {
+      "name": "Introduction to Artificial Intelligence",
+      "issuer": "IBM",
+      "date": "December 2023",
+      "url": "",
+      "credential_id": ""
+    },
+    {
+      "name": "Foundations of Cybersecurity",
+      "issuer": "Google",
+      "date": "September 2024",
+      "url": "",
+      "credential_id": ""
+    },
+    {
+      "name": "Introduction to Generative AI and Prompt Engineering",
+      "issuer": "Mapúa University",
+      "date": "May 2025",
+      "url": "",
+      "credential_id": ""
+    },
+    {
+      "name": "Machine Learning for All",
+      "issuer": "University of London",
+      "date": "January 2024",
+      "url": "",
+      "credential_id": ""
     }
   ],
   "interests": [
     {
-      "name": "Woodworking",
-      "summary": "",
-      "images": [
-        {
-          "img_path": "portfolio_media/ww1.jpg",
-          "caption": "Chess Board made from Walnut and Maple"
-        },
-        {
-          "img_path": "portfolio_media/ww2.jpg",
-          "caption": "Wooden Necklace from Walnut Scrap"
-        }
-      ]
+      "name": "Open Source Contributions",
+      "summary": "Contributing to open source projects and building tools for the developer community",
+      "images": []
+    },
+    {
+      "name": "Competitive Programming",
+      "summary": "Solving algorithmic challenges and participating in programming contests",
+      "images": []
+    },
+    {
+      "name": "Building Personal Automation Tools",
+      "summary": "Creating scripts and tools using AHKv2 and Python to automate daily workflows",
+      "images": []
+    },
+    {
+      "name": "Typing",
+      "summary": "Practicing and improving typing speed and accuracy, including custom keyboard layouts",
+      "images": []
     }
   ],
-  "languages": [],
-  "references": []
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Filipino",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Ilokano",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "references": [
+    {
+      "name": "Kasey Lyn M. Rulloda",
+      "relation": "CSA Staff (Reliever) - Center for Student Advising",
+      "reference": "Professional reference from Center for Student Advising at Mapúa University where I work as a student assistant and peer adviser.",
+      "email": "klrulloda@mapua.edu.ph"
+    },
+    {
+      "name": "Leanna Mae A. Cruz",
+      "relation": "Life Coach - Center for Student Advising",
+      "reference": "Professional reference from Center for Student Advising at Mapúa University where I work as a student assistant and peer adviser.",
+      "email": "lmacruz@mapua.edu.ph"
+    }
+  ]
 }
