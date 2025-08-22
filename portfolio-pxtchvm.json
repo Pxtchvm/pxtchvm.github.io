@@ -22,11 +22,6 @@
       "svg_path": "img/github.svg"
     },
     {
-      "label": "Personal Website",
-      "url": "https://pxtchvm.github.io/",
-      "svg_path": "img/globe.svg"
-    },
-    {
       "label": "Credly",
       "url": "https://www.credly.com/users/jacob-duldulao",
       "svg_path": "img/globe.svg"
@@ -64,7 +59,6 @@
     {
       "title": "Few-Shot Learning for Occupancy Detection Using Wi-Fi Beamforming Feedback",
       "summary": "Privacy-focused system that detects and counts people using Wi-Fi beamforming feedback with meta-learning architecture. Ongoing capstone thesis.",
-      "url": "https://github.com/Pxtchvm",
       "type": "Capstone Thesis",
       "status": "Ongoing",
       "year": "2025",
@@ -79,7 +73,7 @@
     {
       "title": "crAIvings - AI-Powered Restaurant Feedback Analysis",
       "summary": "Web application leveraging AI to analyze restaurant reviews, providing actionable insights to restaurant owners.",
-      "url": "https://github.com/Pxtchvm",
+      "url": "https://github.com/Pxtchvm/ai-restaurant-feedback",
       "highlights": [
         "AI-powered sentiment analysis and review categorization",
         "Actionable insights dashboard for restaurant owners",
@@ -90,7 +84,7 @@
     {
       "title": "FindMe: School Lost and Found System",
       "summary": "Modern web-based Lost and Found Management System designed to streamline reporting, tracking, and claiming lost items on campus.",
-      "url": "https://github.com/Pxtchvm",
+      "url": "https://github.com/Pxtchvm/FindMe",
       "highlights": [
         "Streamlined process for reporting and tracking lost items",
         "Web-based interface for easy campus-wide access",
@@ -101,7 +95,7 @@
     {
       "title": "Colemak Without AltGr",
       "summary": "Modified Colemak keyboard layout for Windows without AltGr functionality, optimized for IDE usage with hotkey shortcuts.",
-      "url": "https://github.com/Pxtchvm",
+      "url": "https://github.com/Pxtchvm/colemak-without-AltGr",
       "highlights": [
         "Custom keyboard layout modification for improved productivity",
         "Capslock remapped to Backspace functionality",
