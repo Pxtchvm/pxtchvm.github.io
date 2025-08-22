@@ -288,8 +288,8 @@
             <section>
               <h2 class="section-heading">Skills</h2>
               {% for category in skill_categories %}
-                <div class="skill-category">
-                  <h3>{{ category.category }}</h3>
+                <div class="skill-category" style="margin-bottom: 1.5rem;">
+                  <h3 style="text-align: center; font-size: 1.2rem; margin-bottom: 0.8rem; font-weight: 600;">{{ category.category }}</h3>
                   <ul class="unstyled-list">
                     {% for skill in category.skills %}
                       <li>

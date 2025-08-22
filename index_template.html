@@ -36,6 +36,29 @@
     <link rel="stylesheet" href="css/modern_normalize.css" />
     <link rel="stylesheet" href="css/html5bp.css">
     <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Custom Skills Color Styling -->
+    <style>
+      /* Programming Languages - Default color */
+      .skill-category-0 {
+        /* Keep default color */
+      }
+      
+      /* Web Development - Blue tone */
+      .skill-category-1 {
+        background: linear-gradient(to right, #3b82f6, #60a5fa) !important;
+      }
+      
+      /* Cloud & DevOps - Green tone */
+      .skill-category-2 {
+        background: linear-gradient(to right, #10b981, #34d399) !important;
+      }
+      
+      /* Tools & Automation - Purple tone */
+      .skill-category-3 {
+        background: linear-gradient(to right, #8b5cf6, #a78bfa) !important;
+      }
+    </style>
 
     <!-- Set a theme color that matches your website's primary color -->
     <meta name="theme-color" content="#fafafa">
@@ -224,9 +247,6 @@
                       {{ cert.issuer }}
                       {% if cert.date %} - {{ cert.date }}{% endif %}
                     </p>
-                    {% if cert.credential_id %}
-                      <p class="credential-id">Credential ID: {{ cert.credential_id }}</p>
-                    {% endif %}
                   </li>
                 {% endfor %}
               </ul>
@@ -320,14 +340,14 @@
             <section>
               <h2 class="section-heading">Skills</h2>
               {% for category in skill_categories %}
-                <div class="skill-category">
-                  <h3 class="skill-category-title">{{ category.category }}</h3>
+                <div class="skill-category" style="margin-bottom: 2rem;">
+                  <h3 class="skill-category-title" style="text-align: center; font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600;">{{ category.category }}</h3>
                   <ul class="unstyled-list">
                     {% for skill in category.skills %}
                       <li>
                         <h4>{{ skill.name }}</h4>
                         <div class="skill-bar">
-                          <div class="skill-bar-fill w-{{ skill.proficiency }}"
+                          <div class="skill-bar-fill w-{{ skill.proficiency }} skill-category-{{ loop.index0 }}"
                                role="meter"
                                aria-valuenow="{{ skill.proficiency }}"
                                aria-valuemin="0"

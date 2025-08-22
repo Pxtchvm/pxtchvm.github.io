@@ -121,7 +121,7 @@
       "title": "AWS Certified AI Practitioner",
       "institution": "Amazon Web Services",
       "year": "2025",
-      "description": "Professional certification in AI and machine learning on AWS platform"
+      "description": "Foundation-level certification in AI and Machine Learning on AWS platform"
     },
     {
       "title": "AWS Certified Cloud Practitioner", 
@@ -162,9 +162,6 @@
       "institution": "Don Bosco Technical Institute of Makati",
       "location": "Chino Roces Avenue, Brgy. Pio Del Pilar, Makati City",
       "url": "https://donboscomakati.edu.ph/",
-      "degrees": [
-        "Senior High School - Science, Technology, Engineering, and Mathematics (STEM)"
-      ],
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
