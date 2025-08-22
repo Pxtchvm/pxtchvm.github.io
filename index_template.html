@@ -68,7 +68,7 @@
           <div class="header-info">
             <h1>{{ name }}</h1>
             {% if label %}<h2 class="header-label">{{ label }}</h2>{% endif %}
-            {% if contact.email or contact.phone or contact.telephone or contact.location %}
+            {% if contact.email or contact.phone or contact.location %}
               <address>
                 <ul class="inline-list flex-responsive">
                   {% if contact.email %}
@@ -79,11 +79,6 @@
                   {% if contact.phone %}
                     <li>
                       <a href="tel:+{{ contact.phone | replace('-', '') }}">{{ contact.phone }}</a>
-                    </li>
-                  {% endif %}
-                  {% if contact.telephone %}
-                    <li>
-                      <a href="tel:{{ contact.telephone | replace('(', '') | replace(')', '') | replace('-', '') }}">{{ contact.telephone }}</a>
                     </li>
                   {% endif %}
                   {% if contact.location %}<li>{{ contact.location }}</li>{% endif %}
@@ -105,7 +100,7 @@
                 {% endfor %}
               </ul>
             {% endif %}
-            {% if summary %}<p class="header-summary">{{ summary }}</p>{% endif %}
+            {% if summary %}<p class="header-summary">{{ summary | safe }}</p>{% endif %}
           </div>
         </div>
       </div>
@@ -212,6 +207,32 @@
             </section>
           {% endif %}
 
+          {% if certifications %}
+            <section>
+              <h2 class="section-heading">Certifications</h2>
+              <ul class="unstyled-list">
+                {% for cert in certifications %}
+                  <li>
+                    <h3>
+                      {% if cert.url %}
+                        <a href="{{ cert.url }}" rel="noopener noreferrer">{{ cert.name }}</a>
+                      {% else %}
+                        {{ cert.name }}
+                      {% endif %}
+                    </h3>
+                    <p class="section-label">
+                      {{ cert.issuer }}
+                      {% if cert.date %} - {{ cert.date }}{% endif %}
+                    </p>
+                    {% if cert.credential_id %}
+                      <p class="credential-id">Credential ID: {{ cert.credential_id }}</p>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+
           {% if volunteer_experience %}
             <section>
               <h2 class="section-heading">Volunteer Experience</h2>
@@ -295,51 +316,30 @@
             </section>
           {% endif %}
 
-          {% if skills %}
+          {% if skill_categories %}
             <section>
               <h2 class="section-heading">Skills</h2>
-              <ul class="unstyled-list">
-                {% for skill in skills %}
-                  <li>
-                    <h3>{{ skill.name }}</h3>
-                    <div class="skill-bar">
-                      <div class="skill-bar-fill w-{{ skill.proficiency }}"
-                           role="meter"
-                           aria-valuenow="{{ skill.proficiency }}"
-                           aria-valuemin="0"
-                           aria-valuemax="100">
-                        <span class="skill-bar-label">{{ skill.proficiency_label }}</span>
-                      </div>
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            </section>
-          {% endif %}
-
-          {% if certifications %}
-            <section>
-              <h2 class="section-heading">Certifications</h2>
-              <ul class="unstyled-list">
-                {% for cert in certifications %}
-                  <li>
-                    <h3>
-                      {% if cert.url %}
-                        <a href="{{ cert.url }}" rel="noopener noreferrer">{{ cert.name }}</a>
-                      {% else %}
-                        {{ cert.name }}
-                      {% endif %}
-                    </h3>
-                    <p class="section-label">
-                      {{ cert.issuer }}
-                      {% if cert.date %} - {{ cert.date }}{% endif %}
-                    </p>
-                    {% if cert.credential_id %}
-                      <p class="credential-id">Credential ID: {{ cert.credential_id }}</p>
-                    {% endif %}
-                  </li>
-                {% endfor %}
-              </ul>
+              {% for category in skill_categories %}
+                <div class="skill-category">
+                  <h3 class="skill-category-title">{{ category.category }}</h3>
+                  <ul class="unstyled-list">
+                    {% for skill in category.skills %}
+                      <li>
+                        <h4>{{ skill.name }}</h4>
+                        <div class="skill-bar">
+                          <div class="skill-bar-fill w-{{ skill.proficiency }}"
+                               role="meter"
+                               aria-valuenow="{{ skill.proficiency }}"
+                               aria-valuemin="0"
+                               aria-valuemax="100">
+                            <span class="skill-bar-label">{{ skill.proficiency_label }}</span>
+                          </div>
+                        </div>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
             </section>
           {% endif %}
 

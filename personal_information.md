@@ -96,12 +96,12 @@
 
 - [AWS Certified AI Practitioner](https://www.credly.com/badges/d2fb9874-a12b-4c7f-8fd8-e962ab2d00c5/public_url) (August 2025)
 - [AWS Certified Cloud Practitioner](https://www.credly.com/badges/ef9dd933-7a1a-4918-98de-6dd281a83090/public_url) (July 2025)
-- Big Data, Artificial Intelligence, and Ethics (UC Davis, June 2025)
-- Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming (Stanford, March 2024)
-- Introduction to Artificial Intelligence (IBM, December 2023)
-- Foundations of Cybersecurity (Google, September 2024)
-- Introduction to Generative AI and Prompt Engineering (Mapúa University, May 2025)
-- Machine Learning for All (University of London, January 2024)
+- [Big Data, Artificial Intelligence, and Ethics](https://www.coursera.org/account/accomplishments/verify/TCXWZKELV971) (UC Davis, June 2025)
+- [Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming](https://www.coursera.org/account/accomplishments/records/KUDP5H8R4VU7) (Stanford, March 2024)
+- [Introduction to Artificial Intelligence](https://www.coursera.org/account/accomplishments/records/XD4NLHPJ942R) (IBM, December 2023)
+- [Foundations of Cybersecurity](https://www.coursera.org/account/accomplishments/records/ZPK2I4YK99S4) (Google, September 2024)
+- [Introduction to Generative AI and Prompt Engineering](https://www.coursera.org/account/accomplishments/records/65JTZCSQS92N) (Mapúa University, May 2025)
+- [Machine Learning for All](https://www.coursera.org/account/accomplishments/records/G2K49XH4EAD6) (University of London, January 2024)
 - TOPCIT (Test Of Practical competency in ICT) exam taker
 
 ## Volunteer Experience: Volunteer work with organizations, roles, and dates?
