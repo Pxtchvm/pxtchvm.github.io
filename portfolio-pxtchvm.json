@@ -5,10 +5,12 @@
   "contact": {
     "email": "joduldulao@mymail.mapua.edu.ph",
     "phone": "63945-166-1000",
-    "location": "6875 Washington St., Brgy. Pio Del Pilar, Makati City, Philippines"
+    "telephone": "02(8772-6397)",
+    "location": "6875 Washington St., Brgy. Pio Del Pilar, Makati City, Philippines",
+    "provincial_address": "Burayoc, Pagudpud, Ilocos Norte"
   },
   "summary": "Computer Science Student specializing in Artificial Intelligence at Mapúa University Makati where I work as a student assistant and peer adviser helping other students with their coursework. Areas of interest include AI, machine learning, cloud computing, web development, and cybersecurity research.",
-  "url": "https://pxtchvm.github.io",
+  "base_url": "https://pxtchvm.github.io",
   "social_links": [
     {
       "label": "LinkedIn",
@@ -46,29 +48,35 @@
       ]
     }
   ],
-  "projects": [
+  "research_publications": [
     {
       "title": "Advanced Phishing Techniques Research",
       "summary": "Literature review analyzing Adversary-in-the-Middle and Browser-in-the-Browser attacks in modern cybersecurity, published in CIT Journal.",
       "url": "https://doi.org/10.2478/cait-2025-0004",
+      "journal": "CIT Journal of Computing and Information Technology",
+      "volume": "Volume 25, Issue 1",
+      "year": "2025",
       "highlights": [
         "Published research in CIT Journal of Computing and Information Technology",
         "Analyzed sophisticated phishing methods that bypass traditional security",
         "Developed practical defense recommendations for cybersecurity teams"
-      ],
-      "images": []
+      ]
     },
     {
-      "title": "Few-Shot Learning for Occupancy Detection (Capstone Thesis)",
-      "summary": "Privacy-focused system that detects and counts people using Wi-Fi beamforming feedback with meta-learning architecture.",
+      "title": "Few-Shot Learning for Occupancy Detection Using Wi-Fi Beamforming Feedback",
+      "summary": "Privacy-focused system that detects and counts people using Wi-Fi beamforming feedback with meta-learning architecture. Ongoing capstone thesis.",
       "url": "https://github.com/Pxtchvm",
+      "type": "Capstone Thesis",
+      "status": "Ongoing",
+      "year": "2025",
       "highlights": [
         "Combines few-shot learning with Wi-Fi beamforming data",
         "Adapts to new environments with just 1-10 training samples",
         "Led research methodology design and multi-environment data collection"
-      ],
-      "images": []
-    },
+      ]
+    }
+  ],
+  "projects": [
     {
       "title": "crAIvings - AI-Powered Restaurant Feedback Analysis",
       "summary": "Web application leveraging AI to analyze restaurant reviews, providing actionable insights to restaurant owners.",
@@ -101,6 +109,26 @@
         "Optimized for development workflow in IDEs like VSCode"
       ],
       "images": []
+    }
+  ],
+  "professional_awards": [
+    {
+      "title": "Dean's and President's Lister",
+      "institution": "Mapúa University Makati",
+      "year": "Multiple Terms",
+      "description": "Academic excellence recognition with GWA of 1.39"
+    },
+    {
+      "title": "AWS Certified AI Practitioner",
+      "institution": "Amazon Web Services",
+      "year": "2025",
+      "description": "Professional certification in AI and machine learning on AWS platform"
+    },
+    {
+      "title": "AWS Certified Cloud Practitioner", 
+      "institution": "Amazon Web Services",
+      "year": "2025",
+      "description": "Foundation-level certification demonstrating cloud computing knowledge"
     }
   ],
   "volunteer_experience": [],

@@ -61,7 +61,7 @@
         <div class="header-top flex-responsive">
           <div class="header-info">
             <h1>{{ name }}</h1>
-            {% if contact.email or contact.phone or contact.location %}
+            {% if contact.email or contact.phone or contact.telephone or contact.location %}
               <address>
                 <ul class="inline-list flex-responsive">
                   {% if contact.email %}
@@ -72,6 +72,11 @@
                   {% if contact.phone %}
                     <li>
                       <a href="tel:+{{ contact.phone | replace('-', '') }}">{{ contact.phone }}</a>
+                    </li>
+                  {% endif %}
+                  {% if contact.telephone %}
+                    <li>
+                      <a href="tel:{{ contact.telephone | replace('(', '') | replace(')', '') | replace('-', '') }}">{{ contact.telephone }}</a>
                     </li>
                   {% endif %}
                   {% if contact.location %}<li>{{ contact.location }}</li>{% endif %}
@@ -106,6 +111,42 @@
                   {% if job.highlights %}
                     <ul>
                       {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+
+          {% if research_publications %}
+            <section>
+              <h2 class="section-heading">Research Publications</h2>
+              {% for pub in research_publications %}
+                <section>
+                  <h3>
+                    {% if pub.url %}
+                      <a href="{{ pub.url }}">{{ pub.title }}</a>
+                    {% else %}
+                      {{ pub.title }}
+                    {% endif %}
+                  </h3>
+                  {% if pub.journal %}
+                    <p class="section-label">
+                      {{ pub.journal }}
+                      {% if pub.volume %} - {{ pub.volume }}{% endif %}
+                      {% if pub.year %} ({{ pub.year }}){% endif %}
+                    </p>
+                  {% elif pub.type %}
+                    <p class="section-label">
+                      {{ pub.type }}
+                      {% if pub.status %} - {{ pub.status }}{% endif %}
+                      {% if pub.year %} ({{ pub.year }}){% endif %}
+                    </p>
+                  {% endif %}
+                  {% if pub.summary %}<p>{{ pub.summary }}</p>{% endif %}
+                  {% if pub.highlights %}
+                    <ul>
+                      {% for highlight in pub.highlights %}<li>{{ highlight }}</li>{% endfor %}
                     </ul>
                   {% endif %}
                 </section>
@@ -153,6 +194,29 @@
             </section>
           {% endif %}
 
+          {% if certifications %}
+            <section>
+              <h2 class="section-heading">Certifications</h2>
+              <ul class="unstyled-list">
+                {% for cert in certifications %}
+                  <li>
+                    <h3>
+                      {% if cert.url %}
+                        <a href="{{ cert.url }}" rel="noopener noreferrer">{{ cert.name }}</a>
+                      {% else %}
+                        {{ cert.name }}
+                      {% endif %}
+                    </h3>
+                    <p class="section-label">
+                      {{ cert.issuer }}
+                      {% if cert.date %} - {{ cert.date }}{% endif %}
+                    </p>
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+
           {% if volunteer_experience %}
             <section>
               <h2 class="section-heading">Volunteer Experience</h2>
@@ -174,6 +238,78 @@
                       {% for highlight in vol.highlights %}<li>{{ highlight }}</li>{% endfor %}
                     </ul>
                   {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+
+          {% if professional_awards %}
+            <section>
+              <h2 class="section-heading">Awards & Honors</h2>
+              {% for award in professional_awards %}
+                <section>
+                  <h3>{{ award.title }}</h3>
+                  <p class="section-label">
+                    {{ award.institution }}
+                    {% if award.year %} - {{ award.year }}{% endif %}
+                  </p>
+                  {% if award.description %}<p>{{ award.description }}</p>{% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+
+          {% if education %}
+            <section>
+              <h2 class="section-heading">Education</h2>
+              {% for edu in education %}
+                <section>
+                  <h3>
+                    {% if edu.url %}
+                      <a href="{{ edu.url }}">{{ edu.institution }}</a>
+                    {% else %}
+                      {{ edu.institution }}
+                    {% endif %}
+                  </h3>
+                  {% if edu.location %}<p class="section-label">{{ edu.location }}</p>{% endif %}
+                  {% if edu.degrees %}
+                    <ul>
+                      {% for deg in edu.degrees %}<li>{{ deg }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                  {% if edu.honors %}
+                    <p><strong>Honors:</strong> {{ edu.honors | join(', ') }}</p>
+                  {% endif %}
+                  {% if edu.gpa_cumulative %}
+                    <p><strong>GPA:</strong> {{ edu.gpa_cumulative }}</p>
+                  {% endif %}
+                  {% if edu.graduation_date %}<p><strong>Period:</strong> {{ edu.graduation_date }}</p>{% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+
+          {% if skills %}
+            <section>
+              <h2 class="section-heading">Skills</h2>
+              <ul class="unstyled-list">
+                {% for skill in skills %}
+                  <li>
+                    <strong>{{ skill.name }}:</strong> {{ skill.proficiency_label }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+
+          {% if references %}
+            <section>
+              <h2 class="section-heading">References</h2>
+              {% for ref in references %}
+                <section>
+                  {% if ref.name %}<h3>{{ ref.name }}</h3>{% endif %}
+                  {% if ref.relation %}<p class="section-label">{{ ref.relation }}</p>{% endif %}
+                  {% if ref.email %}<p>Email: <a href="mailto:{{ ref.email }}">{{ ref.email }}</a></p>{% endif %}
                 </section>
               {% endfor %}
             </section>
