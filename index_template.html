@@ -44,19 +44,19 @@
         /* Keep default color */
       }
       
-      /* Web Development - Blue tone */
+      /* Web Development - Light blue tone */
       .skill-category-1 {
-        background: linear-gradient(to right, #3b82f6, #60a5fa) !important;
+        background: linear-gradient(to right, #e3f2fd, #f0f8ff) !important;
       }
       
-      /* Cloud & DevOps - Green tone */
+      /* Cloud & DevOps - Light green tone */
       .skill-category-2 {
-        background: linear-gradient(to right, #10b981, #34d399) !important;
+        background: linear-gradient(to right, #e8f5e8, #f0fff0) !important;
       }
       
-      /* Tools & Automation - Purple tone */
+      /* Tools & Automation - Light purple tone */
       .skill-category-3 {
-        background: linear-gradient(to right, #8b5cf6, #a78bfa) !important;
+        background: linear-gradient(to right, #f3e5f5, #faf0ff) !important;
       }
     </style>
 
@@ -235,7 +235,7 @@
               <h2 class="section-heading">Certifications</h2>
               <ul class="unstyled-list">
                 {% for cert in certifications %}
-                  <li>
+                  <li style="margin-bottom: 1.5rem;">
                     <h3>
                       {% if cert.url %}
                         <a href="{{ cert.url }}" rel="noopener noreferrer">{{ cert.name }}</a>
@@ -341,7 +341,7 @@
               <h2 class="section-heading">Skills</h2>
               {% for category in skill_categories %}
                 <div class="skill-category" style="margin-bottom: 2rem;">
-                  <h3 class="skill-category-title" style="text-align: center; font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600;">{{ category.category }}</h3>
+                  <h3 class="skill-category-title" style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600;">{{ category.category }}</h3>
                   <ul class="unstyled-list">
                     {% for skill in category.skills %}
                       <li>
