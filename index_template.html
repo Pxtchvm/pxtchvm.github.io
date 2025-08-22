@@ -340,11 +340,11 @@
             <section>
               <h2 class="section-heading">Skills</h2>
               {% for category in skill_categories %}
-                <div class="skill-category" style="margin-bottom: 2rem;">
-                  <h3 class="skill-category-title" style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600;">{{ category.category }}</h3>
+                <div class="skill-category" style="margin-bottom: 1.5rem;">
+                  <h3 class="skill-category-title" style="text-align: center; font-size: 1.1rem; margin-bottom: 0.7rem; font-weight: 600;">{{ category.category }}</h3>
                   <ul class="unstyled-list">
                     {% for skill in category.skills %}
-                      <li>
+                      <li style="margin-bottom: 0.3rem;">
                         <h4>{{ skill.name }}</h4>
                         <div class="skill-bar">
                           <div class="skill-bar-fill w-{{ skill.proficiency }} skill-category-{{ loop.index0 }}"
