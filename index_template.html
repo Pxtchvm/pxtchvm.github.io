@@ -328,7 +328,7 @@
                     <p>
                       {% if edu.gpa_major %}<span class="block">GPA in Major: {{ edu.gpa_major }}</span>{% endif %}
                       {% if edu.gpa_cumulative %}<span class="block">Cumulative GPA: {{ edu.gpa_cumulative }}</span>{% endif %}
-                      {% if edu.graduation_date %}<span class="block">Graduation Date: {{ edu.graduation_date }}</span>{% endif %}
+                      {% if edu.graduation_date %}<span class="block">{{ edu.graduation_date }}</span>{% endif %}
                     </p>
                   {% endif %}
                 </section>
@@ -340,14 +340,15 @@
             <section>
               <h2 class="section-heading">Skills</h2>
               {% for category in skill_categories %}
+                {% set category_index = loop.index0 %}
                 <div class="skill-category" style="margin-bottom: 1.5rem;">
-                  <h3 class="skill-category-title" style="text-align: center; font-size: 1.1rem; margin-bottom: 0.7rem; font-weight: 600;">{{ category.category }}</h3>
+                  <h3 class="skill-category-title" style="text-align: center; font-size: 1.1rem; margin-bottom: 0.7rem;">{{ category.category }}</h3>
                   <ul class="unstyled-list">
                     {% for skill in category.skills %}
                       <li style="margin-bottom: 0.3rem;">
                         <h4>{{ skill.name }}</h4>
                         <div class="skill-bar">
-                          <div class="skill-bar-fill w-{{ skill.proficiency }} skill-category-{{ loop.index0 }}"
+                          <div class="skill-bar-fill w-{{ skill.proficiency }} skill-category-{{ category_index }}"
                                role="meter"
                                aria-valuenow="{{ skill.proficiency }}"
                                aria-valuemin="0"
@@ -368,14 +369,14 @@
               <h2 class="section-heading">Awards & Honors</h2>
               <ul class="unstyled-list">
                 {% for award in professional_awards %}
-                  <li>
-                    <h3>{{ award.title }}</h3>
-                    <p class="section-label">
+                  <li style="margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.3rem; font-weight: 600;">{{ award.title }}</h3>
+                    <p class="section-label" style="margin-bottom: 0.5rem;">
                       {{ award.institution }}
                       {% if award.year %} - {{ award.year }}{% endif %}
                     </p>
                     {% if award.description %}
-                      <p>{{ award.description }}</p>
+                      <p style="font-size: 0.9rem; color: #666; line-height: 1.4;">{{ award.description }}</p>
                     {% endif %}
                   </li>
                 {% endfor %}
@@ -401,9 +402,9 @@
             <section>
               <h2 class="section-heading">Interests</h2>
               {% for interest in interests %}
-                <section>
-                  <h3>{{ interest.name }}</h3>
-                  {% if interest.summary %}<p>{{ interest.summary }}</p>{% endif %}
+                <section style="margin-bottom: 2rem;">
+                  <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">{{ interest.name }}</h3>
+                  {% if interest.summary %}<p style="font-size: 0.9rem; color: #666; line-height: 1.4; margin-bottom: 1rem;">{{ interest.summary }}</p>{% endif %}
                   {% if interest.images %}
                     <div class="gallery side-gallery">
                       {% for img in interest.images %}

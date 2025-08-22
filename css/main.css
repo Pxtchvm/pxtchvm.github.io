@@ -210,6 +210,21 @@ aside .section-heading {
   border-left: 4px solid var(--aside-accent-color);
   padding-left: 0.5rem;
   margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+aside section {
+  margin-bottom: 2rem;
+}
+
+aside h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+aside p {
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 aside .section-heading::before,

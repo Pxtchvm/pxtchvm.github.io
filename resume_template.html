@@ -278,7 +278,7 @@
                   {% if edu.gpa_cumulative %}
                     <p><strong>GPA:</strong> {{ edu.gpa_cumulative }}</p>
                   {% endif %}
-                  {% if edu.graduation_date %}<p><strong>Period:</strong> {{ edu.graduation_date }}</p>{% endif %}
+                  {% if edu.graduation_date %}<p>{{ edu.graduation_date }}</p>{% endif %}
                 </section>
               {% endfor %}
             </section>
@@ -289,7 +289,7 @@
               <h2 class="section-heading">Skills</h2>
               {% for category in skill_categories %}
                 <div class="skill-category" style="margin-bottom: 1.2rem;">
-                  <h3 style="text-align: center; font-size: 1.1rem; margin-bottom: 0.6rem; font-weight: 600;">{{ category.category }}</h3>
+                  <h3 style="text-align: center; font-size: 1.1rem; margin-bottom: 0.6rem;">{{ category.category }}</h3>
                   <ul class="unstyled-list">
                     {% for skill in category.skills %}
                       <li style="margin-bottom: 0.2rem;">
